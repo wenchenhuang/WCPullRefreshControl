@@ -7,6 +7,7 @@
 //
 
 #import "DemoTableview.h"
+#import "WCSimplePullRefreshControl.h"
 
 @interface DemoTableview()<UIScrollViewDelegate,WCPullRefreshControlDelegate>
 @property (strong,nonatomic)WCSimplePullRefreshControl * pullRefresh;
@@ -15,17 +16,7 @@
 
 @implementation DemoTableview
 -(void)viewDidLoad{
-    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.tableView
-                                                                       Action:^{
-                                                                           
-                                                                       }
-                                                                 progressItem:WCProgressItemTypeMagicSquare
-                                                               refreshingItem:WCRefreshingItemTypeMagicSquare
-                                                                   lastUpdate:nil
-                                                               showLastUpdate:NO
-                                                                    textColor:[UIColor blueColor]
-                                                                    itemColor:[UIColor grayColor]
-                                                                   pullHeight:64];
+    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.tableView Action:NULL progressItem:WCProgressItemTypeMagicSquare refreshingItem:WCRefreshingItemTypeMagicSquare lastUpdate:nil showLastUpdate:NO textColor:[UIColor blueColor] itemColor:[UIColor grayColor] pullHeight:64];
     self.pullRefresh.delegate = self;
 }
 -(void)reset{
@@ -33,7 +24,7 @@
 }
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    [self.pullRefresh updateWHenScrollDidEndDraging];
+    [self.pullRefresh updateWhenScrollDidEndDraging];
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self.pullRefresh updateWhenScrollviewScroll];

@@ -134,7 +134,7 @@ static const CGFloat itemlength = 25.0;
         self.originalOffset = self.attachedScrollView.contentInset.top - defaultPullHeight;
     }
 }
--(void)updateWHenScrollDidEndDraging{
+-(void)updateWhenScrollDidEndDraging{
     if ([self currentProgress] >=1 && self.state == WCPullRefreshControlStateIdle) {
         self.state = WCPullRefreshControlStateRefreshing;
         self.refreshingItem.hidden = NO;

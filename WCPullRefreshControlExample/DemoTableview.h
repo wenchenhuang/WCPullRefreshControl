@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WCSimplePullRefreshControl.h"
 
 
 @interface DemoTableview : UITableViewController

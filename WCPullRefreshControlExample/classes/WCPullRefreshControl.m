@@ -14,7 +14,7 @@
 
 @end
 @implementation WCPullRefreshControl
--(void)updateWHenScrollDidEndDraging{
+-(void)updateWhenScrollDidEndDraging{
     [NSException raise:NSInternalInconsistencyException format:@"You must override %@ in a sublass",NSStringFromSelector(_cmd)];
 }
 -(void)updateWhenScrollviewScroll{

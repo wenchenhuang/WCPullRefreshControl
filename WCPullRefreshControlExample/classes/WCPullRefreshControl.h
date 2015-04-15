@@ -28,7 +28,7 @@ typedef void(^WCRefreshAction)(void);
 @property (strong,nonatomic)UIScrollView * attachedScrollView;
 @property (nonatomic)CGFloat pullHeight;
 -(void)updateWhenScrollviewScroll;
--(void)updateWHenScrollDidEndDraging;
+-(void)updateWhenScrollDidEndDraging;
 -(void)finishRefreshingSuccessully:(BOOL)success;
 
 @end
