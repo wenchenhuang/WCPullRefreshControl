@@ -19,12 +19,12 @@
                                                                        Action:^{
                                                                            
                                                                        }
-                                                                 progressItem:WCProgressItemTypeRoundCricle
-                                                               refreshingItem:WCRefreshingItemTypeSystemIndicator
+                                                                 progressItem:WCProgressItemTypeMagicSquare
+                                                               refreshingItem:WCRefreshingItemTypeMagicSquare
                                                                    lastUpdate:nil
                                                                showLastUpdate:NO
                                                                     textColor:[UIColor blueColor]
-                                                                    itemColor:[UIColor blueColor]
+                                                                    itemColor:[UIColor grayColor]
                                                                    pullHeight:64];
     self.pullRefresh.delegate = self;
 }

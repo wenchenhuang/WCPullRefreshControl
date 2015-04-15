@@ -7,7 +7,7 @@ WCPullRefreshControl
 * Support custom refreshing view. 
 
  <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/BlueRoundCircle.gif" width="320" />
-
+ <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/magic.gif" width="320" />
 Custom view
 
 <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/RoundCircle.gif" width="320" />
