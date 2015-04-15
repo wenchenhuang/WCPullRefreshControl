@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52458F781ADCE8250074C990 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458F771ADCE8250074C990 /* main.m */; };
+		52458F7B1ADCE8250074C990 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458F7A1ADCE8250074C990 /* AppDelegate.m */; };
+		52458F811ADCE8250074C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52458F7F1ADCE8250074C990 /* Main.storyboard */; };
+		52458F831ADCE8250074C990 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52458F821ADCE8250074C990 /* Images.xcassets */; };
+		52458F861ADCE8250074C990 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52458F841ADCE8250074C990 /* LaunchScreen.xib */; };
+		52458F921ADCE8260074C990 /* WCPullRefreshControlExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458F911ADCE8260074C990 /* WCPullRefreshControlExampleTests.m */; };
+		52458FC61ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FB91ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m */; };
+		52458FC71ADCEAF20074C990 /* NSDate+WCPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FBB1ADCEAF20074C990 /* NSDate+WCPullRefresh.m */; };
+		52458FC81ADCEAF20074C990 /* WCMagicSquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FBD1ADCEAF20074C990 /* WCMagicSquareView.m */; };
+		52458FC91ADCEAF20074C990 /* WCProgressItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FBF1ADCEAF20074C990 /* WCProgressItem.m */; };
+		52458FCA1ADCEAF20074C990 /* WCPullRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC11ADCEAF20074C990 /* WCPullRefreshControl.m */; };
+		52458FCB1ADCEAF20074C990 /* WCRefreshingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC31ADCEAF20074C990 /* WCRefreshingItem.m */; };
+		52458FCC1ADCEAF20074C990 /* WCSimplePullRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */; };
+		525B26351ADD0ABC009B523F /* DemoTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B26341ADD0ABC009B523F /* DemoTableview.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52458F8C1ADCE8260074C990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52458F6A1ADCE8250074C990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52458F711ADCE8250074C990;
+			remoteInfo = WCPullRefreshControlExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52458F721ADCE8250074C990 /* WCPullRefreshControlExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCPullRefreshControlExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52458F761ADCE8250074C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52458F771ADCE8250074C990 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52458F791ADCE8250074C990 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52458F7A1ADCE8250074C990 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52458F801ADCE8250074C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52458F821ADCE8250074C990 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52458F851ADCE8250074C990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		52458F8B1ADCE8260074C990 /* WCPullRefreshControlExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCPullRefreshControlExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52458F901ADCE8260074C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52458F911ADCE8260074C990 /* WCPullRefreshControlExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPullRefreshControlExampleTests.m; sourceTree = "<group>"; };
+		52458FB81ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAShapeLayer+WCPullRefresh.h"; path = "classes/CAShapeLayer+WCPullRefresh.h"; sourceTree = "<group>"; };
+		52458FB91ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAShapeLayer+WCPullRefresh.m"; path = "classes/CAShapeLayer+WCPullRefresh.m"; sourceTree = "<group>"; };
+		52458FBA1ADCEAF20074C990 /* NSDate+WCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+WCPullRefresh.h"; path = "classes/NSDate+WCPullRefresh.h"; sourceTree = "<group>"; };
+		52458FBB1ADCEAF20074C990 /* NSDate+WCPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+WCPullRefresh.m"; path = "classes/NSDate+WCPullRefresh.m"; sourceTree = "<group>"; };
+		52458FBC1ADCEAF20074C990 /* WCMagicSquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCMagicSquareView.h; path = classes/WCMagicSquareView.h; sourceTree = "<group>"; };
+		52458FBD1ADCEAF20074C990 /* WCMagicSquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCMagicSquareView.m; path = classes/WCMagicSquareView.m; sourceTree = "<group>"; };
+		52458FBE1ADCEAF20074C990 /* WCProgressItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCProgressItem.h; path = classes/WCProgressItem.h; sourceTree = "<group>"; };
+		52458FBF1ADCEAF20074C990 /* WCProgressItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCProgressItem.m; path = classes/WCProgressItem.m; sourceTree = "<group>"; };
+		52458FC01ADCEAF20074C990 /* WCPullRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPullRefreshControl.h; path = classes/WCPullRefreshControl.h; sourceTree = "<group>"; };
+		52458FC11ADCEAF20074C990 /* WCPullRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPullRefreshControl.m; path = classes/WCPullRefreshControl.m; sourceTree = "<group>"; };
+		52458FC21ADCEAF20074C990 /* WCRefreshingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCRefreshingItem.h; path = classes/WCRefreshingItem.h; sourceTree = "<group>"; };
+		52458FC31ADCEAF20074C990 /* WCRefreshingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCRefreshingItem.m; path = classes/WCRefreshingItem.m; sourceTree = "<group>"; };
+		52458FC41ADCEAF20074C990 /* WCSimplePullRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSimplePullRefreshControl.h; path = classes/WCSimplePullRefreshControl.h; sourceTree = "<group>"; };
+		52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSimplePullRefreshControl.m; path = classes/WCSimplePullRefreshControl.m; sourceTree = "<group>"; };
+		525B26331ADD0ABC009B523F /* DemoTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableview.h; sourceTree = "<group>"; };
+		525B26341ADD0ABC009B523F /* DemoTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableview.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52458F6F1ADCE8250074C990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52458F881ADCE8260074C990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52458F691ADCE8250074C990 = {
+			isa = PBXGroup;
+			children = (
+				52458F741ADCE8250074C990 /* WCPullRefreshControlExample */,
+				52458F8E1ADCE8260074C990 /* WCPullRefreshControlExampleTests */,
+				52458F731ADCE8250074C990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52458F731ADCE8250074C990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52458F721ADCE8250074C990 /* WCPullRefreshControlExample.app */,
+				52458F8B1ADCE8260074C990 /* WCPullRefreshControlExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52458F741ADCE8250074C990 /* WCPullRefreshControlExample */ = {
+			isa = PBXGroup;
+			children = (
+				52458FCD1ADCEAFE0074C990 /* Classes */,
+				52458F791ADCE8250074C990 /* AppDelegate.h */,
+				52458F7A1ADCE8250074C990 /* AppDelegate.m */,
+				52458F7F1ADCE8250074C990 /* Main.storyboard */,
+				525B26331ADD0ABC009B523F /* DemoTableview.h */,
+				525B26341ADD0ABC009B523F /* DemoTableview.m */,
+				52458F821ADCE8250074C990 /* Images.xcassets */,
+				52458F841ADCE8250074C990 /* LaunchScreen.xib */,
+				52458F751ADCE8250074C990 /* Supporting Files */,
+			);
+			path = WCPullRefreshControlExample;
+			sourceTree = "<group>";
+		};
+		52458F751ADCE8250074C990 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52458F761ADCE8250074C990 /* Info.plist */,
+				52458F771ADCE8250074C990 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52458F8E1ADCE8260074C990 /* WCPullRefreshControlExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				52458F911ADCE8260074C990 /* WCPullRefreshControlExampleTests.m */,
+				52458F8F1ADCE8260074C990 /* Supporting Files */,
+			);
+			path = WCPullRefreshControlExampleTests;
+			sourceTree = "<group>";
+		};
+		52458F8F1ADCE8260074C990 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52458F901ADCE8260074C990 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52458FCD1ADCEAFE0074C990 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52458FB81ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.h */,
+				52458FB91ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m */,
+				52458FBA1ADCEAF20074C990 /* NSDate+WCPullRefresh.h */,
+				52458FBB1ADCEAF20074C990 /* NSDate+WCPullRefresh.m */,
+				52458FBC1ADCEAF20074C990 /* WCMagicSquareView.h */,
+				52458FBD1ADCEAF20074C990 /* WCMagicSquareView.m */,
+				52458FBE1ADCEAF20074C990 /* WCProgressItem.h */,
+				52458FBF1ADCEAF20074C990 /* WCProgressItem.m */,
+				52458FC01ADCEAF20074C990 /* WCPullRefreshControl.h */,
+				52458FC11ADCEAF20074C990 /* WCPullRefreshControl.m */,
+				52458FC21ADCEAF20074C990 /* WCRefreshingItem.h */,
+				52458FC31ADCEAF20074C990 /* WCRefreshingItem.m */,
+				52458FC41ADCEAF20074C990 /* WCSimplePullRefreshControl.h */,
+				52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52458F711ADCE8250074C990 /* WCPullRefreshControlExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52458F951ADCE8260074C990 /* Build configuration list for PBXNativeTarget "WCPullRefreshControlExample" */;
+			buildPhases = (
+				52458F6E1ADCE8250074C990 /* Sources */,
+				52458F6F1ADCE8250074C990 /* Frameworks */,
+				52458F701ADCE8250074C990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCPullRefreshControlExample;
+			productName = WCPullRefreshControlExample;
+			productReference = 52458F721ADCE8250074C990 /* WCPullRefreshControlExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52458F8A1ADCE8260074C990 /* WCPullRefreshControlExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52458F981ADCE8260074C990 /* Build configuration list for PBXNativeTarget "WCPullRefreshControlExampleTests" */;
+			buildPhases = (
+				52458F871ADCE8260074C990 /* Sources */,
+				52458F881ADCE8260074C990 /* Frameworks */,
+				52458F891ADCE8260074C990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52458F8D1ADCE8260074C990 /* PBXTargetDependency */,
+			);
+			name = WCPullRefreshControlExampleTests;
+			productName = WCPullRefreshControlExampleTests;
+			productReference = 52458F8B1ADCE8260074C990 /* WCPullRefreshControlExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52458F6A1ADCE8250074C990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = huangwenchen;
+				TargetAttributes = {
+					52458F711ADCE8250074C990 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					52458F8A1ADCE8260074C990 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 52458F711ADCE8250074C990;
+					};
+				};
+			};
+			buildConfigurationList = 52458F6D1ADCE8250074C990 /* Build configuration list for PBXProject "WCPullRefreshControlExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52458F691ADCE8250074C990;
+			productRefGroup = 52458F731ADCE8250074C990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52458F711ADCE8250074C990 /* WCPullRefreshControlExample */,
+				52458F8A1ADCE8260074C990 /* WCPullRefreshControlExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52458F701ADCE8250074C990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52458F811ADCE8250074C990 /* Main.storyboard in Resources */,
+				52458F861ADCE8250074C990 /* LaunchScreen.xib in Resources */,
+				52458F831ADCE8250074C990 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52458F891ADCE8260074C990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52458F6E1ADCE8250074C990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52458FCA1ADCEAF20074C990 /* WCPullRefreshControl.m in Sources */,
+				52458FCC1ADCEAF20074C990 /* WCSimplePullRefreshControl.m in Sources */,
+				52458FC81ADCEAF20074C990 /* WCMagicSquareView.m in Sources */,
+				52458FC91ADCEAF20074C990 /* WCProgressItem.m in Sources */,
+				52458F7B1ADCE8250074C990 /* AppDelegate.m in Sources */,
+				52458FC71ADCEAF20074C990 /* NSDate+WCPullRefresh.m in Sources */,
+				52458FC61ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m in Sources */,
+				52458F781ADCE8250074C990 /* main.m in Sources */,
+				525B26351ADD0ABC009B523F /* DemoTableview.m in Sources */,
+				52458FCB1ADCEAF20074C990 /* WCRefreshingItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52458F871ADCE8260074C990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52458F921ADCE8260074C990 /* WCPullRefreshControlExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52458F8D1ADCE8260074C990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52458F711ADCE8250074C990 /* WCPullRefreshControlExample */;
+			targetProxy = 52458F8C1ADCE8260074C990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52458F7F1ADCE8250074C990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52458F801ADCE8250074C990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52458F841ADCE8250074C990 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52458F851ADCE8250074C990 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52458F931ADCE8260074C990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52458F941ADCE8260074C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52458F961ADCE8260074C990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WCPullRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52458F971ADCE8260074C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WCPullRefreshControlExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52458F991ADCE8260074C990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WCPullRefreshControlExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WCPullRefreshControlExample.app/WCPullRefreshControlExample";
+			};
+			name = Debug;
+		};
+		52458F9A1ADCE8260074C990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WCPullRefreshControlExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WCPullRefreshControlExample.app/WCPullRefreshControlExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52458F6D1ADCE8250074C990 /* Build configuration list for PBXProject "WCPullRefreshControlExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52458F931ADCE8260074C990 /* Debug */,
+				52458F941ADCE8260074C990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52458F951ADCE8260074C990 /* Build configuration list for PBXNativeTarget "WCPullRefreshControlExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52458F961ADCE8260074C990 /* Debug */,
+				52458F971ADCE8260074C990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52458F981ADCE8260074C990 /* Build configuration list for PBXNativeTarget "WCPullRefreshControlExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52458F991ADCE8260074C990 /* Debug */,
+				52458F9A1ADCE8260074C990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52458F6A1ADCE8250074C990 /* Project object */;
+}
