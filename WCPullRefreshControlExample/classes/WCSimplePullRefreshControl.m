@@ -183,7 +183,6 @@ static const CGFloat itemlength = 25.0;
     }else{
         self.lastUpdateLabel.text = @"Fail to update";
     }
-    NSLog(@"%f",self.originalOffset);
     [UIView animateWithDuration:0.8 animations:^{
         self.attachedScrollView.contentInset = UIEdgeInsetsMake(self.originalOffset,0,0,0);
     } completion:^(BOOL finished) {

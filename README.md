@@ -3,6 +3,7 @@ An IOS pull refresh library
 WCPullRefreshControl
 ===========
 ##Support
+* Support different kinds of scrollview,such as UIScrollview,tableview,webview.
 * Support custom refreshing view. 
 
  <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/BlueRoundCircle.gif" width="320" />
@@ -17,11 +18,12 @@ Custom view
 
 * Support Device orientation
 
-<img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ori.gif" width="320" />
+<img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ori.gif" width="500" />
 
 
 * Support mix different progress and refreshing item Together(Up to 3*4=12 kinds)
-<img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/mix.gif" width="640" height="320"/>
+<img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/mix.gif" width="640"/>
+
 
 ## Installation
 
