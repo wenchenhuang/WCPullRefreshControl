@@ -8,6 +8,7 @@ WCPullRefreshControl is a  "Pull refresh" library. It is quite easy to add "Pull
  <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ScreenShot/BlueRoundCircle.gif" width="320" />
  <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ScreenShot/magic.gif" width="320" />
 <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ScreenShot/mix.gif" width="540"/>
+
  ===========
 
 ##Features
