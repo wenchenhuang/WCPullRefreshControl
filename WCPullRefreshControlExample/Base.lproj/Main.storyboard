@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zeX-a4-yfy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Demo-->
@@ -83,11 +84,50 @@
                             <outlet property="delegate" destination="V1A-pK-EkK" id="iIi-pp-n2o"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Demo" id="Kal-vn-qXD"/>
+                    <navigationItem key="navigationItem" title="Demo" id="Kal-vn-qXD">
+                        <barButtonItem key="rightBarButtonItem" title="Webview" id="Ezl-bS-3jC">
+                            <connections>
+                                <segue destination="fqN-T1-Vgf" kind="show" id="QUI-Qn-ImW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcy-HT-8gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1829" y="157"/>
+        </scene>
+        <!--Webview View Controller-->
+        <scene sceneID="WHC-EJ-uzs">
+            <objects>
+                <viewController id="fqN-T1-Vgf" customClass="WebviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x3N-ve-P64"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYC-E9-E8y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Onz-wp-d4y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbk-9s-cvj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rbk-9s-cvj" firstAttribute="top" secondItem="Onz-wp-d4y" secondAttribute="topMargin" id="9UW-pL-qD9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rbk-9s-cvj" secondAttribute="trailing" constant="-16" id="AeM-iU-WF0"/>
+                            <constraint firstItem="yYC-E9-E8y" firstAttribute="top" secondItem="Rbk-9s-cvj" secondAttribute="bottom" id="DAi-wE-3pf"/>
+                            <constraint firstItem="Rbk-9s-cvj" firstAttribute="leading" secondItem="Onz-wp-d4y" secondAttribute="leadingMargin" constant="-16" id="JTc-J7-HRb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="Rbk-9s-cvj" id="u0X-vl-a7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rda-58-wGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501" y="157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tyt-Nk-1Js">

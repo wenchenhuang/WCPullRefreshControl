@@ -59,7 +59,7 @@ static const CGFloat itemlength = 25.0;
         [scrollview addSubview:self];
         //Set up items
         CGRect itemFrame;
-        itemFrame.origin = CGPointMake(0.0, 0.0);
+        itemFrame.origin = CGPointZero;
         itemFrame.size = CGSizeMake(itemlength,itemlength);
         if (progressType == WCProgressItemTypeMagicSquare) {
             self.progressItem = [[WCProgressItem alloc] initWithFrame:CGRectMake(0,0,scrollview.contentSize.width,15) Type:progressType Color:itemColor];

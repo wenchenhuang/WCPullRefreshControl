@@ -21,6 +21,7 @@
 		52458FCB1ADCEAF20074C990 /* WCRefreshingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC31ADCEAF20074C990 /* WCRefreshingItem.m */; };
 		52458FCC1ADCEAF20074C990 /* WCSimplePullRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */; };
 		525B26351ADD0ABC009B523F /* DemoTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B26341ADD0ABC009B523F /* DemoTableview.m */; };
+		529DAA031AE928A100D3322D /* WebviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA021AE928A100D3322D /* WebviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSimplePullRefreshControl.m; path = classes/WCSimplePullRefreshControl.m; sourceTree = "<group>"; };
 		525B26331ADD0ABC009B523F /* DemoTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableview.h; sourceTree = "<group>"; };
 		525B26341ADD0ABC009B523F /* DemoTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableview.m; sourceTree = "<group>"; };
+		529DAA011AE928A100D3322D /* WebviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewViewController.h; sourceTree = "<group>"; };
+		529DAA021AE928A100D3322D /* WebviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				52458F791ADCE8250074C990 /* AppDelegate.h */,
 				52458F7A1ADCE8250074C990 /* AppDelegate.m */,
 				52458F7F1ADCE8250074C990 /* Main.storyboard */,
+				529DAA011AE928A100D3322D /* WebviewViewController.h */,
+				529DAA021AE928A100D3322D /* WebviewViewController.m */,
 				525B26331ADD0ABC009B523F /* DemoTableview.h */,
 				525B26341ADD0ABC009B523F /* DemoTableview.m */,
 				52458F821ADCE8250074C990 /* Images.xcassets */,
@@ -266,6 +271,7 @@
 				52458FCC1ADCEAF20074C990 /* WCSimplePullRefreshControl.m in Sources */,
 				52458FC81ADCEAF20074C990 /* WCMagicSquareView.m in Sources */,
 				52458FC91ADCEAF20074C990 /* WCProgressItem.m in Sources */,
+				529DAA031AE928A100D3322D /* WebviewViewController.m in Sources */,
 				52458F7B1ADCE8250074C990 /* AppDelegate.m in Sources */,
 				52458FC71ADCEAF20074C990 /* NSDate+WCPullRefresh.m in Sources */,
 				52458FC61ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m in Sources */,

@@ -70,7 +70,7 @@
                              [self transformWithRotation:M_PI * 1.5],
                              [self transformWithRotation:2*M_PI]];
         animation.duration = 1.0;
-        animation.repeatCount = 9999;
+        animation.repeatCount = INFINITY;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
         [self.shapelayer addAnimation:animation forKey:@"rotate"];
         
