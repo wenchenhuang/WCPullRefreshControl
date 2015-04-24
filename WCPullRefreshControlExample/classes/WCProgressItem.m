@@ -9,6 +9,7 @@
 #import "WCProgressItem.h"
 #import "CAShapeLayer+WCPullRefresh.h"
 #import "WCMagicSquareView.h"
+#import "WCGraintCircleLayer.h"
 static const CGFloat offset = 4.0;
 static const CGFloat arrowOffset = 2.0;
 @interface WCProgressItem()
@@ -16,6 +17,7 @@ static const CGFloat arrowOffset = 2.0;
 @property (strong,nonatomic)CAShapeLayer * arrowLayer;
 @property (nonatomic)WCProgressItemType type;
 @property (strong,nonatomic) WCMagicSquareView * squareview;
+@property (strong,nonatomic) WCGraintCircleLayer * graintlayer;
 
 @end
 
@@ -46,6 +48,14 @@ static const CGFloat arrowOffset = 2.0;
                 self.squareview = [[WCMagicSquareView alloc] initWithProgress:0.0 Color:color MaxWidth:320];
                 [self addSubview:self.squareview];
                 break;
+            case WCProgressItemTypeGradientCircle:
+                self.graintlayer = [[WCGraintCircleLayer alloc] initGraintCircleWithBounds:CGRectMake(0, 0, frame.size.width, frame.size.height)
+                                                                                  Position:CGPointMake(CGRectGetWidth(frame)/2, CGRectGetHeight(frame)/2)
+                                                                                 FromColor:[UIColor whiteColor]
+                                                                                   ToColor:color
+                                                                                 LineWidth:3.0];
+                [self.layer addSublayer:self.graintlayer];
+                break;
             default:
                 break;
         }
@@ -59,20 +69,22 @@ static const CGFloat arrowOffset = 2.0;
     NSLog(@"%f %f %f %f",rect.origin.x,rect.origin.y,rect.size.width,rect.size.height);
 }
 -(void)setProgress:(CGFloat)progress{
+    _progress = progress;
     switch (self.type) {
         case WCProgressItemTypeRoundCricle:
             _progress = progress*0.95;
             self.shapelayer.strokeStart = 0.05;
             self.shapelayer.strokeEnd = _progress;
-
             break;
         case WCProgressItemTypeStar:
-            _progress = progress;
             self.shapelayer.strokeEnd = _progress;
             break;
         case WCProgressItemTypeMagicSquare:
-            _progress = progress;
             self.squareview.progress = _progress;
+            break;
+        case WCProgressItemTypeGradientCircle:
+            self.graintlayer.progress = _progress;
+            break;
         default:
             break;
     }

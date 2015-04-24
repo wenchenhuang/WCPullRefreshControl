@@ -11,6 +11,7 @@ typedef NS_ENUM(NSUInteger, WCProgressItemType) {
     WCProgressItemTypeRoundCricle = 0,
     WCProgressItemTypeStar = 1,
     WCProgressItemTypeMagicSquare = 2,
+    WCProgressItemTypeGradientCircle = 3,
 };
 @interface WCProgressItem : UIView
 -(instancetype)initWithFrame:(CGRect)frame Type:(WCProgressItemType)type Color:(UIColor *)color;

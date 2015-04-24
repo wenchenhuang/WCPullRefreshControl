@@ -21,6 +21,7 @@
 		52458FCB1ADCEAF20074C990 /* WCRefreshingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC31ADCEAF20074C990 /* WCRefreshingItem.m */; };
 		52458FCC1ADCEAF20074C990 /* WCSimplePullRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */; };
 		525B26351ADD0ABC009B523F /* DemoTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 525B26341ADD0ABC009B523F /* DemoTableview.m */; };
+		52918AA91AEA36B50023CD96 /* WCGraintCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52918AA81AEA36B50023CD96 /* WCGraintCircleLayer.m */; };
 		529DAA031AE928A100D3322D /* WebviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529DAA021AE928A100D3322D /* WebviewViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		52458FC51ADCEAF20074C990 /* WCSimplePullRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCSimplePullRefreshControl.m; path = classes/WCSimplePullRefreshControl.m; sourceTree = "<group>"; };
 		525B26331ADD0ABC009B523F /* DemoTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableview.h; sourceTree = "<group>"; };
 		525B26341ADD0ABC009B523F /* DemoTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableview.m; sourceTree = "<group>"; };
+		52918AA71AEA36B50023CD96 /* WCGraintCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCGraintCircleLayer.h; sourceTree = "<group>"; };
+		52918AA81AEA36B50023CD96 /* WCGraintCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCGraintCircleLayer.m; sourceTree = "<group>"; };
 		529DAA011AE928A100D3322D /* WebviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewViewController.h; sourceTree = "<group>"; };
 		529DAA021AE928A100D3322D /* WebviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +152,8 @@
 		52458FCD1ADCEAFE0074C990 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52918AA71AEA36B50023CD96 /* WCGraintCircleLayer.h */,
+				52918AA81AEA36B50023CD96 /* WCGraintCircleLayer.m */,
 				52458FB81ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.h */,
 				52458FB91ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m */,
 				52458FBA1ADCEAF20074C990 /* NSDate+WCPullRefresh.h */,
@@ -273,6 +278,7 @@
 				52458FC91ADCEAF20074C990 /* WCProgressItem.m in Sources */,
 				529DAA031AE928A100D3322D /* WebviewViewController.m in Sources */,
 				52458F7B1ADCE8250074C990 /* AppDelegate.m in Sources */,
+				52918AA91AEA36B50023CD96 /* WCGraintCircleLayer.m in Sources */,
 				52458FC71ADCEAF20074C990 /* NSDate+WCPullRefresh.m in Sources */,
 				52458FC61ADCEAF20074C990 /* CAShapeLayer+WCPullRefresh.m in Sources */,
 				52458F781ADCE8250074C990 /* main.m in Sources */,

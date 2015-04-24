@@ -12,6 +12,8 @@ typedef NS_ENUM(NSUInteger, WCRefreshingItemType) {
     WCRefreshingItemTypeRoundCircle,
     WCRefreshingItemTypeStar,
     WCRefreshingItemTypeMagicSquare,
+    WCRefreshingItemTypeGradientCircle,
+
 };
 @interface WCRefreshingItem : UIView
 -(instancetype)initWithFrame:(CGRect)frame Type:(WCRefreshingItemType)type Color:(UIColor *)color;
