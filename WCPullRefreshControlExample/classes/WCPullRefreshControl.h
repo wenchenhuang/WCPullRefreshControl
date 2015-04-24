@@ -30,5 +30,7 @@ typedef void(^WCRefreshAction)(void);
 -(void)updateWhenScrollviewScroll;
 -(void)updateWhenScrollDidEndDraging;
 -(void)finishRefreshingSuccessully:(BOOL)success;
+//-(void)manualStartRefreshingWithAction:(WCRefreshAction)action;
+-(void)manualStartRefreshingWithAction;
 
 @end

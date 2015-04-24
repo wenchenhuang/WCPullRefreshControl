@@ -134,6 +134,7 @@ static const CGFloat itemlength = 25.0;
         self.originalOffset = self.attachedScrollView.contentInset.top - defaultPullHeight;
     }
 }
+
 -(void)updateWhenScrollDidEndDraging{
     if ([self currentProgress] >=1 && self.state == WCPullRefreshControlStateIdle) {
         self.state = WCPullRefreshControlStateRefreshing;
@@ -157,9 +158,6 @@ static const CGFloat itemlength = 25.0;
         if (self.originalOffset == 0) {
             self.originalOffset = self.attachedScrollView.contentInset.top;
         }
-//        if(self.originalInset == 0){
-//            self.originalInset = self.attachedScrollView.contentInset.top;
-//        }
         self.progressItem.progress = [self currentProgress];
         self.lastUpdateLabel.alpha = [self currentProgress];
         self.progressItem.alpha = [self currentProgress];
@@ -173,6 +171,16 @@ static const CGFloat itemlength = 25.0;
             }
             }
     }
+}
+-(void)manualStartRefreshingWithAction{
+    [UIView animateWithDuration:0.8
+                     animations:^{
+                         self.attachedScrollView.contentOffset = CGPointMake(0,-1 * self.attachedScrollView.contentInset.top - self.pullHeight);
+                         
+                     } completion:^(BOOL finished) {
+                         [self updateWhenScrollDidEndDraging];
+//                         action();
+                     }];
 }
 -(void)finishRefreshingSuccessully:(BOOL)success{
     [self.refreshingItem stopAnimating];

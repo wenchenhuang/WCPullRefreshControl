@@ -10,7 +10,11 @@ WCPullRefreshControl is a  "Pull refresh" library. It is quite easy to add "Pull
 <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ScreenShot/mix.gif" width="540"/>
 
  ===========
+##Manual Start refreshing
+Is some case,when view is load,you should start refreshing.You can manual start it like this.
+ <img src="https://raw.github.com/wenchenhuang/WCPullRefreshControl/master/ScreenShot/manual.gif" width="320" />
 
+======
 ##Features
 
 * Support different kinds of scrollview,such as UIScrollview,tableview,webview.
@@ -22,6 +26,11 @@ WCPullRefreshControl is a  "Pull refresh" library. It is quite easy to add "Pull
 ##Requirements
 
 * ARC
+
+===========
+## Version
+
+* 1.0.2 
 
 ===========
 
@@ -61,6 +70,7 @@ self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.t
 ````
 
 *  When refreshing action finished call `finishRefreshingSuccessully:`,you pass in a Bool to tell refresh control whether refreshing finish successfully or not.
+
 
 ===========
 ## Delegate

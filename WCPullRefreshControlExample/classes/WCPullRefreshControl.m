@@ -24,6 +24,9 @@
 -(void)finishRefreshingSuccessully:(BOOL)success{
     [NSException raise:NSInternalInconsistencyException format:@"You must override %@ in a sublass",NSStringFromSelector(_cmd)];
 }
+-(void)manualStartRefreshingWithAction{
+    [NSException raise:NSInternalInconsistencyException format:@"You must override %@ in a sublass",NSStringFromSelector(_cmd)];
+}
 
 
 @end

@@ -12,21 +12,33 @@
 @property (strong,nonatomic) WCSimplePullRefreshControl * pullRefresh;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
+@property (strong,nonatomic) NSURLRequest * request;
 @end
 
 @implementation WebviewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.baidu.com"]];
-    [self.webview loadRequest:request];
+     self.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     self.webview.scrollView.delegate = self;
     self.webview.delegate = self;
-//    self.webview.backgroundColor = [UIColor blueColor];
-    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.webview.scrollView Action:^{
-        [self.webview reload];
-    }];
-    // Do any additional setup after loading the view.
+    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.webview.scrollView
+                                                                       Action:^{
+                                                                           if (self.webview.isLoading) {
+                                                                               [self.webview stopLoading];
+                                                                           }
+                                                                           [self.webview loadRequest:self.request];
+                                                                       }
+                                                                 progressItem:WCProgressItemTypeMagicSquare
+                                                               refreshingItem:WCRefreshingItemTypeMagicSquare
+                                                                   lastUpdate:[NSDate date]
+                                                               showLastUpdate:YES
+                                                                    textColor:[UIColor blueColor]
+                                                                    itemColor:[UIColor lightGrayColor]
+                                                                   pullHeight:64];
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [self.pullRefresh manualStartRefreshingWithAction];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.pullRefresh finishRefreshingSuccessully:true];
