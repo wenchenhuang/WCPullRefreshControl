@@ -18,12 +18,12 @@
 -(void)viewDidLoad{
     self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.tableView
                                                                        Action:NULL
-                                                                 progressItem:WCProgressItemTypeGradientCircle
-                                                               refreshingItem:WCRefreshingItemTypeGradientCircle
+                                                                 progressItem:WCProgressItemTypeRoundCricle
+                                                               refreshingItem:WCRefreshingItemTypeRoundCircle
                                                                    lastUpdate:nil
                                                                showLastUpdate:NO
                                                                     textColor:[UIColor blueColor]
-                                                                    itemColor:[UIColor blackColor]
+                                                                    itemColor:[UIColor blueColor ]
                                                                    pullHeight:64];
     self.pullRefresh.delegate = self;
 }

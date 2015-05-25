@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+     self.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com"]];
     self.webview.scrollView.delegate = self;
     self.webview.delegate = self;
     self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.webview.scrollView
@@ -46,6 +46,7 @@
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     [self.pullRefresh finishRefreshingSuccessully:false];
 }
+
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     [self.pullRefresh updateWhenScrollDidEndDraging];
 }

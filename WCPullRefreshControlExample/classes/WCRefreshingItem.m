@@ -53,7 +53,7 @@
             case WCRefreshingItemTypeGradientCircle:
                 self.graintlayer = [[WCGraintCircleLayer alloc] initGraintCircleWithBounds:CGRectMake(0, 0, frame.size.width, frame.size.height)
                                                                                   Position:CGPointMake(CGRectGetWidth(frame)/2, CGRectGetHeight(frame)/2)
-                                                                                 FromColor:[UIColor whiteColor]
+                                                                                 FromColor:[UIColor clearColor]
                                                                                    ToColor:color
                                                                                  LineWidth:3.0];
                 [self.layer addSublayer:self.graintlayer];
