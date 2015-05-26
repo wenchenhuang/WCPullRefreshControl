@@ -7,9 +7,9 @@
 //
 
 #import "WebviewViewController.h"
-#import "WCSimplePullRefreshControl.h"
+#import "WCPullRefreshControl.h"
 @interface WebviewViewController ()<UIScrollViewDelegate,UIWebViewDelegate>
-@property (strong,nonatomic) WCSimplePullRefreshControl * pullRefresh;
+@property (strong,nonatomic) WCPullRefreshControl * pullRefresh;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
 @property (strong,nonatomic) NSURLRequest * request;
@@ -22,7 +22,7 @@
      self.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.com"]];
     self.webview.scrollView.delegate = self;
     self.webview.delegate = self;
-    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.webview.scrollView
+    self.pullRefresh = [[WCPullRefreshControl alloc] initWithScrollview:self.webview.scrollView
                                                                        Action:^{
                                                                            if (self.webview.isLoading) {
                                                                                [self.webview stopLoading];

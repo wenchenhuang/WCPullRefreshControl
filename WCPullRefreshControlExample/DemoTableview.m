@@ -7,23 +7,23 @@
 //
 
 #import "DemoTableview.h"
-#import "WCSimplePullRefreshControl.h"
+#import "WCPullRefreshControl.h"
 
 @interface DemoTableview()<UIScrollViewDelegate,WCPullRefreshControlDelegate>
-@property (strong,nonatomic)WCSimplePullRefreshControl * pullRefresh;
+@property (strong,nonatomic)WCPullRefreshControl * pullRefresh;
 
 @end
 
 @implementation DemoTableview
 -(void)viewDidLoad{
-    self.pullRefresh = [[WCSimplePullRefreshControl alloc] initWithScrollview:self.tableView
+    self.pullRefresh = [[WCPullRefreshControl alloc] initWithScrollview:self.tableView
                                                                        Action:NULL
                                                                  progressItem:WCProgressItemTypeRoundCricle
                                                                refreshingItem:WCRefreshingItemTypeRoundCircle
                                                                    lastUpdate:nil
                                                                showLastUpdate:NO
                                                                     textColor:[UIColor blueColor]
-                                                                    itemColor:[UIColor blueColor ]
+                                                                    itemColor:[UIColor blueColor]
                                                                    pullHeight:64];
     self.pullRefresh.delegate = self;
 }
