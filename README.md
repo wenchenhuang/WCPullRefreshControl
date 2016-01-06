@@ -1,3 +1,6 @@
+##Not update anymore.
+My new github address https://github.com/LeoMobileDeveloper
+
 # WCPullRefreshControl
 
 WCPullRefreshControl is a  "Pull refresh" library. It is quite easy to add "Pull refresh" to your project with just several lines of code.
